@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main className='md:flex w-11/12 mx-auto'>
+      <main className='md:flex gap-5 w-11/12 mx-auto'>
       <Blogs></Blogs>
       <BookMark></BookMark>
       </main>

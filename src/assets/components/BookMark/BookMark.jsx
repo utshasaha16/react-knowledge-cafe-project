@@ -1,9 +1,15 @@
-const BookMark = () => {
+import PropTypes from 'prop-types';
+const BookMark = ({bookmark}) => {
+    const {title} = bookmark;
     return (
-        <div className="md:w-1/3">
-            <h3>book mark</h3>
+        <div className='p-5 bg-white rounded-md'>
+            <h2 className='text-xl font-semibold'>{title}</h2>
         </div>
     );
 };
+
+BookMark.propTypes = {
+    bookmark: PropTypes.object.isRequired
+}
 
 export default BookMark;
